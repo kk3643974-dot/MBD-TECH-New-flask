@@ -1,0 +1,475 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO SLIDER -->
+<section class="services-hero">
+
+    <div id="serviceSlider" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- SLIDES -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='images/slide1.jpg') }}"
+                     class="d-block w-100 slider-img"
+                     alt="Slide 1">
+
+                <div class="carousel-caption">
+                    <span class="hero-tag">🚀 OUR SERVICES</span>
+
+                    <h1 class="hero-title">
+                        Smart Digital Services
+                    </h1>
+
+                    <p class="hero-text">
+                        Powerful solutions for startups and businesses.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/slide2.jpg') }}"
+                     class="d-block w-100 slider-img"
+                     alt="Slide 2">
+
+                <div class="carousel-caption">
+                    <span class="hero-tag">💻 WEB SOLUTIONS</span>
+
+                    <h1 class="hero-title">
+                        Modern Web Applications
+                    </h1>
+
+                    <p class="hero-text">
+                        Secure, scalable and responsive applications.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/slide3.jpg') }}"
+                     class="d-block w-100 slider-img"
+                     alt="Slide 3">
+
+                <div class="carousel-caption">
+                    <span class="hero-tag">📱 MOBILE APPS</span>
+
+                    <h1 class="hero-title">
+                        Mobile App Development
+                    </h1>
+
+                    <p class="hero-text">
+                        Android & iOS apps with modern user experience.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PREV BUTTON -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#serviceSlider"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- NEXT BUTTON -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#serviceSlider"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services-section py-5">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">📱</div>
+
+                    <h3>Mobile App Development</h3>
+
+                    <p>
+                        High-performance Android & iOS applications with modern UI,
+                        scalability, and seamless user experience.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">💻</div>
+
+                    <h3>Web Application Development</h3>
+
+                    <p>
+                        Secure, scalable, and modern web applications tailored
+                        to your business requirements.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">🎮</div>
+
+                    <h3>Game Development</h3>
+
+                    <p>
+                        Engaging 2D & 3D games with interactive designs and
+                        smooth gaming performance.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">🎨</div>
+
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        Beautiful and user-friendly designs that improve
+                        customer engagement and satisfaction.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">📈</div>
+
+                    <h3>Digital Marketing</h3>
+
+                    <p>
+                        SEO, social media marketing, and growth strategies
+                        to boost your online presence.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card">
+
+                    <div class="service-icon">🛠️</div>
+
+                    <h3>Maintenance & Support</h3>
+
+                    <p>
+                        Reliable maintenance services with 24/7 support
+                        and continuous performance optimization.
+                    </p>
+
+                    <a href="#" class="service-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Why Choose MBD TECH LTD?</h2>
+
+            <p class="section-subtitle">
+                We focus on innovation, quality, and delivering results.
+            </p>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <div class="why-icon">⚡</div>
+                    <h5>Fast Performance</h5>
+                    <p>Optimized digital products with high speed and stability.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <div class="why-icon">🔒</div>
+                    <h5>Secure Systems</h5>
+                    <p>Strong security and reliable technology solutions.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <div class="why-icon">🎯</div>
+                    <h5>Business Focused</h5>
+                    <p>Solutions designed to help your business grow faster.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-box">
+                    <div class="why-icon">🤝</div>
+                    <h5>24/7 Support</h5>
+                    <p>Dedicated support team always ready to help you.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section py-5">
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+                <h2>Ready To Build Your Next Project?</h2>
+
+                <p>
+                    Let’s create powerful digital experiences together.
+                </p>
+            </div>
+
+            <a href="/contact" class="cta-btn">
+                Contact Us →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+
+/* BODY */
+body{
+    background: #f5f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.services-hero{
+    padding: 20px 0;
+}
+
+.slider-img{
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(55%);
+}
+
+.carousel-caption{
+    bottom: 28%;
+}
+
+.hero-tag{
+    background: rgba(255,255,255,0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-title{
+    font-size: 65px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.hero-text{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* SERVICES */
+.services-section{
+    margin-top: 20px;
+}
+
+.service-card{
+    background: white;
+    padding: 40px 30px;
+    border-radius: 25px;
+    height: 100%;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(37,99,235,0.18);
+}
+
+.service-icon{
+    width: 80px;
+    height: 80px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.service-card h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.service-card p{
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.service-btn{
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* WHY */
+.section-title{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.section-subtitle{
+    color: #64748b;
+}
+
+.why-box{
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.why-box:hover{
+    transform: translateY(-10px);
+}
+
+.why-icon{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* CTA */
+.cta-box{
+    background: linear-gradient(135deg,#0f172a,#2563eb);
+    padding: 60px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta-box h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cta-btn{
+    background: #facc15;
+    color: black;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta-btn:hover{
+    background: white;
+    color: black;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .slider-img{
+        height: 500px;
+    }
+
+    .hero-title{
+        font-size: 38px;
+    }
+
+    .hero-text{
+        font-size: 18px;
+    }
+
+    .section-title{
+        font-size: 34px;
+    }
+
+    .cta-box{
+        text-align: center;
+        gap: 20px;
+    }
+
+}
+
+</style>
+
+{% endblock %}

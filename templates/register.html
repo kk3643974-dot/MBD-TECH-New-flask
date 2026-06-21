@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="register-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center min-vh-100">
+
+            <div class="col-lg-10">
+
+                <div class="register-box">
+
+                    <div class="row g-0">
+
+                        <!-- LEFT -->
+                        <div class="col-lg-5 register-left">
+
+                            <div class="overlay"></div>
+
+                            <div class="left-content">
+
+                                <span class="tag">
+                                    🚀 JOIN MBD TECH
+                                </span>
+
+                                <h1>
+                                    Create Your <br>
+                                    Account Today
+                                </h1>
+
+                                <p>
+                                    Join our platform and manage projects,
+                                    services and communication easily.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT -->
+                        <div class="col-lg-7 register-right">
+
+                            <div class="form-box">
+
+                                <h2>Create Account</h2>
+
+                                <p class="form-text">
+                                    Fill your information below
+                                </p>
+
+                                <form method="POST">
+
+                                    <!-- USERNAME -->
+                                    <div class="mb-3">
+
+                                        <label class="form-label">
+                                            Username
+                                        </label>
+
+                                        <input type="text"
+                                               name="username"
+                                               class="form-control custom-input"
+                                               placeholder="Enter username"
+                                               required>
+
+                                    </div>
+
+                                    <!-- EMAIL -->
+                                    <div class="mb-3">
+
+                                        <label class="form-label">
+                                            Email
+                                        </label>
+
+                                        <input type="email"
+                                               name="email"
+                                               class="form-control custom-input"
+                                               placeholder="Enter email"
+                                               required>
+
+                                    </div>
+
+                                    <!-- PHONE -->
+                                    <div class="mb-3">
+
+                                        <label class="form-label">
+                                            Phone Number
+                                        </label>
+
+                                        <input type="text"
+                                               name="phone"
+                                               class="form-control custom-input"
+                                               placeholder="Enter phone number"
+                                               required>
+
+                                    </div>
+
+                                    <!-- CNIC -->
+                                    <div class="mb-3">
+
+                                        <label class="form-label">
+                                            CNIC
+                                        </label>
+
+                                        <input type="text"
+                                               name="cnic"
+                                               class="form-control custom-input"
+                                               placeholder="Enter CNIC"
+                                               required>
+
+                                    </div>
+
+                                    <!-- PASSWORD -->
+                                    <div class="mb-4">
+
+                                        <label class="form-label">
+                                            Password
+                                        </label>
+
+                                        <input type="password"
+                                               name="password"
+                                               class="form-control custom-input"
+                                               placeholder="Create password"
+                                               required>
+
+                                    </div>
+
+                                    <!-- BUTTON -->
+                                    <button type="submit"
+                                            class="register-btn">
+
+                                        Create Account →
+
+                                    </button>
+
+                                </form>
+
+                                <div class="login-link">
+
+                                    Already have an account?
+
+                                    <a href="/login">
+                                        Login Here
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+body{
+    background: #f1f5f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.register-section{
+    padding: 40px 0;
+}
+
+.register-box{
+    background: white;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.register-left{
+    background: linear-gradient(135deg,#0f172a,#2563eb);
+    position: relative;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+.left-content{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.tag{
+    background: rgba(255,255,255,0.12);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.left-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 30px;
+    line-height: 1.2;
+}
+
+.left-content p{
+    margin-top: 20px;
+    color: #dbeafe;
+    line-height: 1.8;
+}
+
+.register-right{
+    padding: 60px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.form-box{
+    width: 100%;
+}
+
+.form-box h2{
+    font-size: 42px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.form-text{
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.form-label{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.custom-input{
+    height: 58px;
+    border-radius: 15px;
+    border: 1px solid #dbeafe;
+    padding-left: 20px;
+}
+
+.custom-input:focus{
+    box-shadow: none;
+    border-color: #2563eb;
+}
+
+.register-btn{
+    width: 100%;
+    height: 58px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg,#2563eb,#1d4ed8);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    transform: translateY(-5px);
+}
+
+.login-link{
+    margin-top: 25px;
+    text-align: center;
+    color: #64748b;
+}
+
+.login-link a{
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+@media(max-width:992px){
+
+    .register-left{
+        min-height: 400px;
+    }
+
+    .left-content h1{
+        font-size: 38px;
+    }
+
+    .register-right{
+        padding: 40px 30px;
+    }
+
+}
+
+</style>
+
+{% endblock %}

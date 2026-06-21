@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section py-5">
+
+```
+<div class="container">
+
+    <div class="row g-5 align-items-center">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-5">
+
+            <div class="contact-info">
+
+                <h2>Get In Touch</h2>
+
+                <p>
+                    Have questions or ideas?
+                    Reach out to our team and
+                    let’s build something amazing together.
+                </p>
+
+                <!-- Office Address -->
+                <div class="info-box">
+
+                    <div class="info-icon">📍</div>
+
+                    <div>
+                        <h5>Office Address</h5>
+                        <p>Pakistan</p>
+                    </div>
+
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="info-box">
+
+                    <div class="info-icon">📞</div>
+
+                    <div>
+                        <h5>WhatsApp</h5>
+                        <p>
+                            <a href="https://wa.me/923496421369" target="_blank">
+                                0349-6421369
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+                <div class="info-box">
+
+                    <div class="info-icon">📧</div>
+
+                    <div>
+                        <h5>Email Address</h5>
+                        <p>info@mbdtech.com</p>
+                    </div>
+
+                </div>
+
+                <!-- Working Hours -->
+                <div class="info-box">
+
+                    <div class="info-icon">⏰</div>
+
+                    <div>
+                        <h5>Working Hours</h5>
+                        <p>Mon - Sat : 9AM - 7PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-7">
+
+            <div class="contact-form">
+
+                <h2 class="mb-4">
+                    Send Message
+                </h2>
+
+                <form method="POST">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+
+            <input type="text"
+                   name="name"
+                   class="form-control custom-input"
+                   placeholder="Your Name"
+                   required>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <input type="email"
+                   name="email"
+                   class="form-control custom-input"
+                   placeholder="Your Email"
+                   required>
+
+        </div>
+
+    </div>
+
+    <div class="mb-4">
+
+        <input type="text"
+               name="subject"
+               class="form-control custom-input"
+               placeholder="Subject"
+               required>
+
+    </div>
+
+    <div class="mb-4">
+
+        <textarea rows="6"
+                  name="message"
+                  class="form-control custom-input"
+                  placeholder="Write Your Message"
+                  required></textarea>
+
+    </div>
+
+    <button type="submit" class="send-btn">
+        Send Message →
+    </button>
+
+</form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+{% endblock %}

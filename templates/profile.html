@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card profile-card shadow-lg border-0">
+
+                <div class="card-body text-center p-5">
+
+                    <!-- Profile Icon -->
+                    <div class="profile-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <h1 class="profile-title mt-4">
+                        My Profile
+                    </h1>
+
+                    <p class="profile-subtitle">
+                        Welcome to MBD TECH LTD Portal
+                    </p>
+
+                    <div class="divider"></div>
+
+                    <!-- User Details -->
+                    <div class="row mt-4">
+
+                        <div class="col-md-6 mb-4">
+
+                            <div class="info-card">
+
+                                <i class="bi bi-person-circle info-icon"></i>
+
+                                <h5>Username</h5>
+
+                                <p>{{ user.username }}</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+
+                            <div class="info-card">
+
+                                <i class="bi bi-envelope-fill info-icon"></i>
+
+                                <h5>Email Address</h5>
+
+                                <p>{{ user.email }}</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Back Button -->
+                    <a href="/user_dashboard"
+                       class="btn btn-dark px-5 py-2 rounded-pill">
+                        <i class="bi bi-arrow-left"></i>
+                        Back to Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+
+.profile-card{
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+}
+
+.profile-avatar{
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0d6efd,#2563eb);
+    color: white;
+    font-size: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(13,110,253,0.3);
+}
+
+.profile-title{
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.profile-subtitle{
+    color: #64748b;
+    font-size: 18px;
+}
+
+.divider{
+    width: 80px;
+    height: 4px;
+    background: #ffc107;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.info-card{
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.info-icon{
+    font-size: 35px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.info-card h5{
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.info-card p{
+    color: #475569;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+body{
+    background: #f5f7fb;
+}
+
+</style>
+
+{% endblock %}

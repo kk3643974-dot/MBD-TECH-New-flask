@@ -1,0 +1,436 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- DASHBOARD -->
+<section class="dashboard-section">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-3 sidebar">
+
+                <div class="logo-box">
+                    <h2>MBD TECH</h2>
+                    <p>User Dashboard</p>
+                </div>
+
+                <ul class="sidebar-menu">
+
+                    {% if dashboard%}
+                    <li>
+                        <a href="#">
+                            🏠 Dashboard
+                        </a>
+                    </li>
+                    {% endif %}
+
+                    <li>
+                        <a href="{{ url_for('profile')}}">
+                            👤 Profile
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#">
+                            📁 My Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            💬 Messages
+                        </a>
+                    </li> -->
+
+                    <li>
+                        <a href="{{ url_for('logout')}}">
+                            🚪 Logout
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="col-lg-9 main-content">
+
+                <!-- TOPBAR -->
+                <div class="topbar">
+
+                    <div>
+                        <h2>Welcome Back 👋</h2>
+                        <p>Manage your projects and account easily.</p>
+                    </div>
+
+                    <div class="user-box">
+                        <img src="https://i.pravatar.cc/100"
+                             alt="user">
+
+                        <div>
+                            <h6>User Name</h6>
+                            <span>Client</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CARDS -->
+                <div class="row g-4 mt-2">
+
+                    <!-- CARD -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="dashboard-card">
+
+                            <div class="card-icon">📁</div>
+
+                            <h3>12</h3>
+
+                            <p>Total Projects</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="dashboard-card">
+
+                            <div class="card-icon">💬</div>
+
+                            <h3>28</h3>
+
+                            <p>Messages</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="dashboard-card">
+
+                            <div class="card-icon">✅</div>
+
+                            <h3>8</h3>
+
+                            <p>Completed Tasks</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECT SECTION -->
+                <div class="projects-box mt-5">
+
+                    <div class="section-header">
+
+                        <h3>Recent Projects</h3>
+
+                        <a href="#" class="view-btn">
+                            View All
+                        </a>
+
+                    </div>
+
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+
+                        <div>
+                            <h5>E-Commerce Website</h5>
+                            <p>Web Development</p>
+                        </div>
+
+                        <span class="status active">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+
+                        <div>
+                            <h5>Mobile Banking App</h5>
+                            <p>App Development</p>
+                        </div>
+
+                        <span class="status progress">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <!-- PROJECT ITEM -->
+                    <div class="project-item">
+
+                        <div>
+                            <h5>Portfolio Website</h5>
+                            <p>UI/UX Design</p>
+                        </div>
+
+                        <span class="status completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+/* BODY */
+body{
+    background: #f4f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* DASHBOARD */
+.dashboard-section{
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    background: linear-gradient(180deg,#0f172a,#1e3a8a);
+    min-height: 100vh;
+    padding: 40px 25px;
+    color: white;
+}
+
+.logo-box h2{
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.logo-box p{
+    color: #cbd5e1;
+}
+
+/* MENU */
+.sidebar-menu{
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.sidebar-menu li{
+    margin-bottom: 15px;
+}
+
+.sidebar-menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.sidebar-menu a:hover{
+    background: rgba(255,255,255,0.12);
+    padding-left: 28px;
+}
+
+/* MAIN */
+.main-content{
+    padding: 40px;
+}
+
+/* TOPBAR */
+.topbar{
+    background: white;
+    padding: 25px 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.topbar h2{
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.topbar p{
+    color: #64748b;
+}
+
+/* USER */
+.user-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* CARDS */
+.dashboard-card{
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.dashboard-card:hover{
+    transform: translateY(-10px);
+}
+
+.card-icon{
+    width: 80px;
+    height: 80px;
+    background: #eff6ff;
+    color: #2563eb;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-card h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.dashboard-card p{
+    color: #64748b;
+    font-size: 18px;
+}
+
+/* PROJECTS */
+.projects-box{
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.view-btn{
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* PROJECT ITEM */
+.project-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 20px 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.project-item h5{
+    font-weight: 700;
+}
+
+.project-item p{
+    color: #64748b;
+}
+
+/* STATUS */
+.status{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 120px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.active{
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.progress{
+    background: #fef3c7;
+    color: #d97706;
+    min-width: 130px;
+}
+.completed{
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .sidebar{
+        min-height: auto;
+    }
+
+    .main-content{
+        padding: 20px;
+    }
+
+    .topbar{
+        gap: 20px;
+    }
+
+    .topbar h2{
+        font-size: 28px;
+    }
+
+    .project-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 20px 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+}
+
+</style>
+
+{% endblock %}

@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HEADINGS */
+h1{
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* LINKS */
+a{
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover{
+    color: #1d6fa5;
+}
+
+/* BUTTONS */
+button{
+    padding: 8px 15px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background: #1d6fa5;
+}
+
+/* ======================================
+   CONTACT HERO SECTION
+====================================== */
+
+.contact-hero{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    padding: 100px 0;
+    color: white;
+    border-radius: 20px;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-tag{
+    background: rgba(255,255,255,0.15);
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.hero-title{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 25px;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-text{
+    font-size: 20px;
+    color: #dbeafe;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ======================================
+   CONTACT SECTION
+====================================== */
+
+.contact-section{
+    margin-top: 50px;
+}
+
+.contact-info{
+    background: white;
+    padding: 45px;
+    border-radius: 25px;
+    height: 100%;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.contact-info h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.contact-info p{
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* INFO BOX */
+
+.info-box{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.info-icon{
+    width: 65px;
+    height: 65px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+/* FORM */
+
+.contact-form{
+    background: white;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.contact-form h2{
+    font-size: 38px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+/* INPUTS */
+
+.custom-input{
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid #dbeafe;
+    font-size: 16px;
+}
+
+.custom-input:focus{
+    box-shadow: none;
+    border-color: #2563eb;
+}
+
+/* BUTTON */
+
+.send-btn{
+    background: linear-gradient(135deg,#2563eb,#1d4ed8);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.send-btn:hover{
+    transform: translateY(-5px);
+}
+
+/* CTA SECTION */
+
+.cta-box{
+    background: linear-gradient(135deg,#0f172a,#2563eb);
+    padding: 70px 40px;
+    border-radius: 30px;
+    color: white;
+}
+
+.cta-box h2{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.cta-box p{
+    margin-top: 20px;
+    color: #dbeafe;
+    font-size: 18px;
+}
+
